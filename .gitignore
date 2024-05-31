@@ -10,6 +10,7 @@
 #
 # Normal rules (sorted alphabetically)
 #
+*.cmd
 *.a
 *.asn1.[ch]
 *.bin
