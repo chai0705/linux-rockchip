@@ -1,0 +1,1 @@
+cmd_drivers/nvme/host/nvme-tcp.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o drivers/nvme/host/nvme-tcp.ko drivers/nvme/host/nvme-tcp.o drivers/nvme/host/nvme-tcp.mod.o;  /usr/bin/make -f ./arch/arm64/Makefile.postlink drivers/nvme/host/nvme-tcp.ko

@@ -1,0 +1,1 @@
+cmd_drivers/uio/uio_dmem_genirq.ko := aarch64-linux-gnu-ld -r -EL  -maarch64elf -z noexecstack --build-id=sha1  -T scripts/module.lds -o drivers/uio/uio_dmem_genirq.ko drivers/uio/uio_dmem_genirq.o drivers/uio/uio_dmem_genirq.mod.o;  /usr/bin/make -f ./arch/arm64/Makefile.postlink drivers/uio/uio_dmem_genirq.ko

@@ -300,6 +300,7 @@ dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588s-roc-pc.dtb
 dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588s-tablet-rk806-single-v10.dtb
 dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588s-tablet-v10.dtb
 dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588s-tablet-v11.dtb
-dtb-$(CONFIG_ARCH_ROCKCHIP) += topeet-rk3588-linux.dtb
-
+dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588-topeet-full.dtb
+dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588-topeet-mini.dtb
+dtb-$(CONFIG_ARCH_ROCKCHIP) += rk3588s-topeet.dtb
 subdir-y := $(dts-dirs) overlay
