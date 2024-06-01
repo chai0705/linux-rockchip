@@ -606,6 +606,9 @@ static void option_instat_callback(struct urb *urb);
 
 
 static const struct usb_device_id option_ids[] = {
+	{ USB_DEVICE(0x2C7C, 0x0125) },
+        { USB_DEVICE(0x1286, 0x4e3c) },
+        { USB_DEVICE_AND_INTERFACE_INFO(0x2c7c, 0x0900, 0xff, 0x00, 0x00) },
 	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_COLT) },
 	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_RICOLA) },
 	{ USB_DEVICE(OPTION_VENDOR_ID, OPTION_PRODUCT_RICOLA_LIGHT) },
@@ -2229,6 +2232,10 @@ static struct usb_serial_driver option_1port_device = {
 #ifdef CONFIG_PM
 	.suspend           = usb_wwan_suspend,
 	.resume            = usb_wwan_resume,
+	#if 1 //Added by Quectel
+        .reset_resume = usb_wwan_resume,
+        #endif
+
 #endif
 };
 
